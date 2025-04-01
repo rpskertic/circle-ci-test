@@ -15,6 +15,6 @@ jobs:
       - save_cache:
           key: v1-dependencies-{{ checksum "package.json" }}   
           paths:
-            - node modules  
+            - node_modules  
       - run: 
           command: npm test
