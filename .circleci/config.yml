@@ -5,8 +5,8 @@ jobs:
     docker:
       -image: cimg/node:14.10.1
     steps:
-      -checkout
-      -run:
+      - checkout
+      - run:
           command: npm install
-      -run: 
+      - run: 
           command: npm test
